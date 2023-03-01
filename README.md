@@ -1,6 +1,11 @@
 # Tip calculator app 
+<h4 align="center"> 
+	🚧   🚀 Em construção...  🚧
+</h4>
 
 ## Table of contents
+
+
 
 -   [Overview](#overview)
 
