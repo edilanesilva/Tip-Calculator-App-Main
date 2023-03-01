@@ -7,7 +7,7 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
+			href="./assets/images/favicon-32x32.png"
 		/>
 
 		<title>Tip calculator app</title>
@@ -16,25 +16,30 @@
 		<main>
 			<section>
 				<div>
-					<form action="">
+					<form id="form" action="#">
 						<fieldset>
 							<legend>BILL</legend>
-							<input type="text" placeholder="$0" />
+							<input type="number" id="bill" />
 						</fieldset>
 
 						<fieldset>
 							<legend>Select Tip %</legend>
-							<button>5%</button>
-							<button>10%</button>
-							<button>15%</button>
-							<button>25%</button>
-							<button>50%</button>
-							<button>Custom</button>
+							<button id="btn5">5%</button>
+							<button id="btn10">10%</button>
+							<button id="btn15">15%</button>
+							<button id="btn25">25%</button>
+							<button id="btn50">50%</button>
+							<button id="btn-custom">Custom</button>
 						</fieldset>
 
 						<fieldset>
 							<legend>Number of People Tip</legend>
-							<input type="text" placeholder="0" />
+							<input
+								type="number"
+								placeholder="0"
+								id=""
+								id="qtd-people"
+							/>
 						</fieldset>
 					</form>
 				</div>
@@ -46,5 +51,6 @@
 				</div>
 			</section>
 		</main>
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>
