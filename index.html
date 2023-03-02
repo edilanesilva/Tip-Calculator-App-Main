@@ -9,20 +9,23 @@
 			sizes="32x32"
 			href="./assets/images/favicon-32x32.png"
 		/>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 
 		<title>Tip calculator app</title>
 	</head>
 	<body>
-		<main>
-			<section>
-				<div>
+		<header>SPLI<br />TTER</header>
+		<main class="main">
+			<section class="app">
+				<div class="left-colum">
 					<form id="form" action="#">
 						<fieldset>
 							<legend>BILL</legend>
 							<input type="number" id="bill" />
 						</fieldset>
 
-						<fieldset>
+						<fieldset class="group-btn">
 							<legend>Select Tip %</legend>
 							<button id="btn5">5%</button>
 							<button id="btn10">10%</button>
@@ -43,7 +46,7 @@
 						</fieldset>
 					</form>
 				</div>
-				<div>
+				<div class="right-colum">
 					<p>Amount <span>/ person</span></p>
 
 					<p>Total <span> / person</span></p>

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+	font-family: "Space Mono", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: hsl(186, 41%, 84%);
+}
+.main {
+	background-color: hsl(0, 0%, 100%);
+	width: 50%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+	border-radius: 10px;
+}
+
+.app {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 1.65em 0;
+}
+
+.left-colum,
+.right-colum {
+	width: 50%;
+	margin: 1em;
+}
+.left-colum form {
+	margin-left: 1em;
+}
+.left-colum fieldset {
+	padding: 0.65em 0;
+}
+
+.left-colum input {
+	width: 100%;
+	font-size: 24px;
+	border-radius: 5px;
+}
+.group-btn {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.group-btn button {
+	width: 80px;
+	padding: 10px 15px;
+	margin-left: 0.65em;
+	margin-bottom: 0.65em;
+	border-radius: 5px;
+	border: none;
+	background-color: hsl(183, 100%, 15%);
+	color: hsl(0, 0%, 100%);
+	font-size: 18px;
+	text-align: center;
+}
+
+.group-btn button:last-child {
+	background-color: hsl(189, 41%, 97%);
+	color: hsl(183, 100%, 15%);
+}
