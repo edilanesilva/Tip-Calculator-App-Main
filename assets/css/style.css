@@ -1,23 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 body {
-	font-family: "Space Mono", sans-serif;
+	font-family: "Space Mono", monospace;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 12px;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	background-color: hsl(186, 41%, 84%);
+	color: hsl(183, 100%, 15%);
+	font-weight: bold;
+}
+.header-logo {
+	margin-bottom: 4em;
 }
 .main {
 	background-color: hsl(0, 0%, 100%);
-	width: 50%;
-	height: 50%;
 	display: flex;
 	justify-content: center;
-	margin-top: 2em;
 	border-radius: 10px;
 }
 
@@ -25,7 +27,6 @@ body {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
-	margin: 1.65em 0;
 }
 
 .left-colum,
@@ -38,12 +39,21 @@ body {
 }
 .left-colum fieldset {
 	padding: 0.65em 0;
+	margin: 2em 0;
 }
 
-.left-colum input {
+.input-bill {
+	background-image: url(/assets/images/icon-dollar.svg);
+	background-repeat: no-repeat;
+	background-position: 5px;
+	text-align: right;
+	background-color: hsl(189, 41%, 97%);
+	padding: 5px;
+	border-radius: 5px;
 	width: 100%;
 	font-size: 24px;
-	border-radius: 5px;
+	color: hsl(185, 41%, 84%);
+	border: none;
 }
 .group-btn {
 	display: flex;
@@ -51,9 +61,9 @@ body {
 }
 
 .group-btn button {
-	width: 80px;
+	width: 100px;
 	padding: 10px 15px;
-	margin-left: 0.65em;
+	margin: 6px;
 	margin-bottom: 0.65em;
 	border-radius: 5px;
 	border: none;
@@ -61,9 +71,67 @@ body {
 	color: hsl(0, 0%, 100%);
 	font-size: 18px;
 	text-align: center;
+	font-weight: 700;
+}
+.group-btn button:nth-child(1) {
+	margin-left: none;
+}
+.group-btn button:nth-child(4) {
+	margin-left: none;
 }
 
 .group-btn button:last-child {
 	background-color: hsl(189, 41%, 97%);
 	color: hsl(183, 100%, 15%);
+}
+
+.input-people {
+	background-image: url(/assets/images/icon-person.svg);
+	background-repeat: no-repeat;
+	background-position: 5px;
+	text-align: right;
+	background-color: hsl(189, 41%, 97%);
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 24px;
+	color: hsl(185, 41%, 84%);
+	border: none;
+}
+
+.right-colum {
+	background-color: hsl(183, 100%, 15%);
+	border-radius: 10px;
+	color: hsl(0, 0%, 100%);
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.right-group {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em auto;
+	width: 80%;
+}
+.right-group span {
+	font-size: 12px;
+	font-weight: 200;
+	color: hsl(184, 14%, 56%);
+	display: block;
+}
+
+.right-price {
+	font-size: 24px;
+	color: hsl(172, 67%, 45%);
+	font-weight: 700;
+}
+
+.btn-reset {
+	align-self: center;
+	width: 70%;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	border-radius: 10px;
 }

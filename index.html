@@ -15,14 +15,27 @@
 		<title>Tip calculator app</title>
 	</head>
 	<body>
-		<header>SPLI<br />TTER</header>
+		<header class="header-logo">
+			<img
+				src="assets/images/logo.svg
+			"
+				alt="logo"
+			/>
+		</header>
+
 		<main class="main">
 			<section class="app">
 				<div class="left-colum">
 					<form id="form" action="#">
 						<fieldset>
 							<legend>BILL</legend>
-							<input type="number" id="bill" />
+
+							<input
+								type="number"
+								id="bill"
+								class="input-bill"
+								placeholder="0"
+							/>
 						</fieldset>
 
 						<fieldset class="group-btn">
@@ -40,17 +53,37 @@
 							<input
 								type="number"
 								placeholder="0"
-								id=""
-								id="qtd-people"
+								class="input-people"
 							/>
 						</fieldset>
 					</form>
 				</div>
 				<div class="right-colum">
-					<p>Amount <span>/ person</span></p>
-
-					<p>Total <span> / person</span></p>
-					<button>Reset</button>
+					<div>
+						<div class="right-group">
+							<h3>
+								Amount <span> <br />/ person</span>
+							</h3>
+							<div class="right-price">
+								<img
+									src="assets/images/icon-dollar.svg"
+									alt=""
+								/>0.00
+							</div>
+						</div>
+						<div class="right-group">
+							<h3>
+								Total <span> <br />/ person</span>
+							</h3>
+							<div class="right-price">
+								<img
+									src="assets/images/icon-dollar.svg"
+									alt=""
+								/>0.00
+							</div>
+						</div>
+					</div>
+					<button class="btn-reset">Reset</button>
 				</div>
 			</section>
 		</main>
