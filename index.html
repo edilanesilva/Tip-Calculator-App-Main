@@ -24,6 +24,7 @@
 		</header>
 
 		<main class="main">
+			
 			<section class="app">
 				<div class="left-colum">
 					<form id="form" action="#">
@@ -31,26 +32,27 @@
 							<legend>BILL</legend>
 
 							<input
-								type="number"
+								type="text"
 								id="bill"
 								class="input-bill"
-								placeholder="0"
+								type="number" placeholder="0"
 							/>
 						</fieldset>
 
-						<fieldset class="group-btn">
+						<fieldset class="group-btn" id="buttons-container">
 							<legend>Select Tip %</legend>
-							<button id="btn5">5%</button>
+							<button id="btn5" type="button">5%</button>
 							<button id="btn10">10%</button>
 							<button id="btn15">15%</button>
 							<button id="btn25">25%</button>
 							<button id="btn50">50%</button>
-							<button id="btn-custom">Custom</button>
+							<input id="btn-custom" class="btn-custom" placeholder="Custom" id="btn-custom" >
+							</input>
 						</fieldset>
 
 						<fieldset>
 							<legend>Number of People Tip</legend>
-							<input
+							<input id="qtd-people"
 								type="number"
 								placeholder="0"
 								class="input-people"
@@ -62,9 +64,9 @@
 					<div>
 						<div class="right-group">
 							<h3>
-								Amount <span> <br />/ person</span>
+								Tip Amount <span> <br />/ person</span>
 							</h3>
-							<div class="right-price">
+							<div class="right-price" id="tip-amount">
 								<img
 									src="assets/images/icon-dollar.svg"
 									alt=""
@@ -75,7 +77,7 @@
 							<h3>
 								Total <span> <br />/ person</span>
 							</h3>
-							<div class="right-price">
+							<div class="right-price" id="total-person">
 								<img
 									src="assets/images/icon-dollar.svg"
 									alt=""
@@ -87,6 +89,12 @@
 				</div>
 			</section>
 		</main>
+		<footer>
+			<div class="attribution">
+			  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			  Coded by <a href="https://www.linkedin.com/in/marco-franca/">Edilane Silva</a>.
+			</div>
+		  </footer>
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>

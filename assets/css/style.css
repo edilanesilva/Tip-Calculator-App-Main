@@ -52,7 +52,7 @@ body {
 	border-radius: 5px;
 	width: 100%;
 	font-size: 24px;
-	color: hsl(185, 41%, 84%);
+	color: hsl(186, 5%, 43%);
 	border: none;
 }
 .group-btn {
@@ -60,29 +60,33 @@ body {
 	flex-wrap: wrap;
 }
 
-.group-btn button {
+.group-btn button,
+.btn-custom {
 	width: 100px;
 	padding: 10px 15px;
 	margin: 6px;
 	margin-bottom: 0.65em;
 	border-radius: 5px;
-	border: none;
 	background-color: hsl(183, 100%, 15%);
 	color: hsl(0, 0%, 100%);
 	font-size: 18px;
 	text-align: center;
 	font-weight: 700;
 }
-.group-btn button:nth-child(1) {
-	margin-left: none;
-}
-.group-btn button:nth-child(4) {
-	margin-left: none;
+.group-btn button:hover {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
 }
 
-.group-btn button:last-child {
+.btn-custom {
 	background-color: hsl(189, 41%, 97%);
 	color: hsl(183, 100%, 15%);
+	border: none;
+}
+.btn-custom:focus {
+	outline: solid hsl(172, 67%, 45%);
+	background-color: hsl(189, 41%, 97%);
+	cursor: pointer;
 }
 
 .input-people {
@@ -95,7 +99,7 @@ body {
 	border-radius: 5px;
 	width: 100%;
 	font-size: 24px;
-	color: hsl(185, 41%, 84%);
+	color: hsl(186, 5%, 43%);
 	border: none;
 }
 
@@ -134,4 +138,21 @@ body {
 	margin-bottom: 20px;
 	padding: 10px 0;
 	border-radius: 10px;
+	background-color: hsl(172, 91%, 27%);
+	text-transform: uppercase;
+	color: hsl(0, 0%, 100%);
+	font-weight: bold;
+	border: none;
+}
+
+.btn-reset:hover {
+	background-color: rgb(159, 232, 223);
+	color: hsl(183, 100%, 15%);
+}
+
+.attribution{
+	position: absolute;
+	bottom: 0;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
 }
