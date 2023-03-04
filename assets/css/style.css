@@ -102,6 +102,10 @@ body {
 	color: hsl(186, 5%, 43%);
 	border: none;
 }
+.text-alert{
+	color: red;
+	display: none;
+}
 
 .right-colum {
 	background-color: hsl(183, 100%, 15%);

@@ -1,7 +1,11 @@
+const conta = document.querySelector('#bill');
+const numeroDePessoas = document.querySelector("#qtd-people");
 const gorjetaPorPessoa = document.querySelector('#tip-amount');
 const totalGorjetaPorPessoa = document.querySelector('#total-person');
 const btnTips = document.querySelectorAll("#buttons-container button ");
-const btnReset= document.querySelector('#btn-reset')
+const btnReset = document.querySelector('#btn-reset');
+const btnCustom = document.querySelector('#btn-custom');
+const msgAlert = document.querySelector('#text-alert')
 
 
 
@@ -9,7 +13,7 @@ btnTips.forEach((btn) => {
 	btn.addEventListener('click', (e) => {
 		const valueTip = e.target.innerText
 		const conta = document.querySelector('#bill').value
-		const numeroDePessoas = document.querySelector("#qtd-people").value
+		const numeroDePessoas = document.querySelector("#qtd-people").value 
 		
 		
 		if (conta !== "" && numeroDePessoas !== "" && valueTip == '5%') {
@@ -54,37 +58,41 @@ btnTips.forEach((btn) => {
 
 		}
 		else {
-			alert('preencha todos os campos')
+			msgAlert.style.display='block'
 		}
 	})
 })
 
-function tipPersonalizado() {
-	const btnCustom = document.querySelector('input');
-	const conta = document.querySelector('#bill').value
-	const numeroDePessoas = document.querySelector("#qtd-people").value
-		
+/* tip personalizado */
+btnCustom.addEventListener('click', () => {
+	const conta = document.querySelector('#bill').value;
+	const numeroDePessoas = document.querySelector("#qtd-people").value;
 
-	if (conta !== "" && numeroDePessoas !== "" && btnCustom !== "") {
+	 if (conta !== "" && numeroDePessoas !== "" ) {
 
-		valorGorjetaPessoa = (btnCustom.value / 100) *conta / numeroDePessoas
+		valorGorjetaPessoa = (conta / 100) * btnCustom.value / numeroDePessoas
 		totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
 		gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
 		totalGorjetaPorPessoa.innerHTML = `\$ ${totalGorjetaPessoa.toFixed(2)}`
-		
-				
 	}
 
 	else {
-		alert('preencha todos os campos')
-	}
-}
-
-btnCustom.addEventListener('click', () => {
-	tipPersonalizado()
+		msgAlert.style.display='block'
+	} 
+	
 })
 
+/* reset */
 
+btnReset.addEventListener('click', () => {
+	conta.value = ''
+	numeroDePessoas.value = ''
+	gorjetaPorPessoa.innerHTML = '$ 0.00'
+	totalGorjetaPorPessoa.innerHTML = '$ 0.00'
+	btnCustom.value = ""
+	msgAlert.style.display='none'
+
+})
 
 
 
