@@ -1,21 +1,88 @@
-const btn5 = document.querySelector('#btn5');
-const btn10 = document.querySelector('#btn10');
-const btn15 = document.querySelector('#btn15');
-const btn25 = document.querySelector('#btn25');
-const btn50 = document.querySelector('#btn50');
-const btnCustom =  document.querySelector('#btn-custom')
 const gorjetaPorPessoa = document.querySelector('#tip-amount');
 const totalGorjetaPorPessoa = document.querySelector('#total-person');
+const btnTips = document.querySelectorAll("#buttons-container button ");
+const btnReset= document.querySelector('#btn-reset')
 
-function calculaGorjeta() {
+
+
+btnTips.forEach((btn) => {
+	btn.addEventListener('click', (e) => {
+		const valueTip = e.target.innerText
+		const conta = document.querySelector('#bill').value
+		const numeroDePessoas = document.querySelector("#qtd-people").value
+		
+		
+		if (conta !== "" && numeroDePessoas !== "" && valueTip == '5%') {
+
+			let valorGorjetaPessoa = (conta * 5 / 100) / numeroDePessoas
+			let totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
+			
+			gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
+			totalGorjetaPorPessoa.innerHTML =`$ ${totalGorjetaPessoa.toFixed(2)}`
+					
+		}
+		else if (conta !== "" && numeroDePessoas !== "" && valueTip == '10%') {
+			valorGorjetaPessoa = (conta * 10 / 100) / numeroDePessoas
+			totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
+			
+			gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
+			totalGorjetaPorPessoa.innerHTML =`$ ${totalGorjetaPessoa.toFixed(2)}`
+
+		}
+		else if (conta !== "" && numeroDePessoas !== "" && valueTip == '15%') {
+			valorGorjetaPessoa = (conta * 15 / 100) / numeroDePessoas
+			totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
+			
+			gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
+			totalGorjetaPorPessoa.innerHTML =`\$ ${totalGorjetaPessoa.toFixed(2)}`
+
+		}
+		else if (conta !== "" && numeroDePessoas !== "" && valueTip == '25%') {
+			valorGorjetaPessoa = (conta * 25 / 100) / numeroDePessoas
+			totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
+			
+			gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
+			totalGorjetaPorPessoa.innerHTML =`\$ ${totalGorjetaPessoa.toFixed(2)}`
+
+		}
+		else if (conta !== "" && numeroDePessoas !== "" && valueTip == '50%') {
+			valorGorjetaPessoa = (conta * 50 / 100) / numeroDePessoas
+			totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
+			
+			gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
+			totalGorjetaPorPessoa.innerHTML =`\$ ${totalGorjetaPessoa.toFixed(2)}`
+
+		}
+		else {
+			alert('preencha todos os campos')
+		}
+	})
+})
+
+function tipPersonalizado() {
+	const btnCustom = document.querySelector('input');
 	const conta = document.querySelector('#bill').value
 	const numeroDePessoas = document.querySelector("#qtd-people").value
-	
-	if (conta == "" || numeroDePessoas == "") {
-		alert('Por favor, digite todos os dados')
+		
+
+	if (conta !== "" && numeroDePessoas !== "" && btnCustom !== "") {
+
+		valorGorjetaPessoa = (btnCustom.value / 100) *conta / numeroDePessoas
+		totalGorjetaPessoa = (conta / numeroDePessoas) + valorGorjetaPessoa
+		gorjetaPorPessoa.innerHTML = `\$ ${valorGorjetaPessoa.toFixed(2)}`
+		totalGorjetaPorPessoa.innerHTML = `\$ ${totalGorjetaPessoa.toFixed(2)}`
+		
+				
+	}
+
+	else {
+		alert('preencha todos os campos')
 	}
 }
 
+btnCustom.addEventListener('click', () => {
+	tipPersonalizado()
+})
 
 
 
