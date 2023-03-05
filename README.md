@@ -33,7 +33,7 @@ Users should be able to:
 
 ## Author
 
--   GitHub - [https://github.com/edilanesilva)
+-   GitHub - [GitHub](https://github.com/edilanesilva)
 -   Frontend Mentor - [@edilanesilva](https://www.frontendmentor.io/profile/edilanesilva)
 
 
