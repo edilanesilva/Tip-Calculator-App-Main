@@ -1,0 +1,63 @@
+@media screen and (min-width: 400px){
+    
+    .main {
+        padding: 2em;
+    }
+
+    .left-colum,.right-colum {
+	width: 100%;
+	
+    } 
+
+    .attribution{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 722px){
+    
+        .left-colum fieldset {
+            padding: 0.65em 0;
+            margin: 2em 0;
+        } 
+
+        .attribution{
+            display: none;
+        }
+
+}
+
+@media screen and (min-width: 1440px){
+    
+    body {
+        height: 100vh; 
+        
+    }
+     
+
+    .app {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .left-colum,
+    .right-colum {
+	    width: 50%;
+	    margin: 1em;
+    } 
+
+    .left-colum form {
+	    margin-left: 1em;
+    }
+     
+
+    .attribution{
+	position: absolute;
+	bottom: 0;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+    } 
+
+}
+

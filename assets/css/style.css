@@ -1,46 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-body {
+  body {
 	font-family: "Space Mono", monospace;
 	font-weight: 500;
 	font-size: 12px;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	background-color: hsl(186, 41%, 84%);
 	color: hsl(183, 100%, 15%);
-	font-weight: bold;
+	font-weight: bold; 
 }
-.header-logo {
-	margin-bottom: 4em;
-}
-.main {
+ .header-logo {
+	margin: 4em 0;
+} 
+ .main {
 	background-color: hsl(0, 0%, 100%);
 	display: flex;
 	justify-content: center;
 	border-radius: 10px;
 }
 
-.app {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-}
 
-.left-colum,
-.right-colum {
-	width: 50%;
-	margin: 1em;
-}
-.left-colum form {
-	margin-left: 1em;
-}
 .left-colum fieldset {
 	padding: 0.65em 0;
 	margin: 2em 0;
-}
+}   
 
 .input-bill {
 	background-image: url(/assets/images/icon-dollar.svg);
@@ -154,9 +140,9 @@ body {
 	color: hsl(183, 100%, 15%);
 }
 
-.attribution{
+/* .attribution{
 	position: absolute;
 	bottom: 0;
 	font-size: 20px;
 	transform: translate(-50%,-50%);
-}
+} */
