@@ -20,4 +20,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/my-solution/screenshot.PNG)
+![](./assets/images/my-solution/mobile.PNG)
+
+### Built with
+
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   desktop-first workflow
+-   [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - JS vanilla
+
+## Author
+
+-   GitHub - [GitHub](https://github.com/edilanesilva)
+-   Frontend Mentor - [@edilanesilva](https://www.frontendmentor.io/profile/edilanesilva)
+
+
+
+
