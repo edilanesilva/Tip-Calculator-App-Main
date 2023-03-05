@@ -1,5 +1,4 @@
-@media screen and (min-width: 400px){
-    
+@media screen and (min-width: 400px){    
     .main {
         padding: 2em;
     }
@@ -14,7 +13,7 @@
     }
 }
 
-@media screen and (min-width: 722px){
+ @media screen and (min-width: 722px){
     
         .left-colum fieldset {
             padding: 0.65em 0;
@@ -26,8 +25,8 @@
         }
 
 }
-
-@media screen and (min-width: 1440px){
+ 
+@media screen and (min-width: 1075px){
     
     body{
         height: 100vh;
