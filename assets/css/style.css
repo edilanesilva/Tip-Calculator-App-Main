@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-  body {
+html{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+body {
 	font-family: "Space Mono", monospace;
 	font-weight: 500;
 	font-size: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	background-color: hsl(186, 41%, 84%);
 	color: hsl(183, 100%, 15%);
 	font-weight: bold; 
 }
  .header-logo {
 	margin: 4em 0;
+	text-align: center;
 } 
  .main {
 	background-color: hsl(0, 0%, 100%);
@@ -140,9 +143,3 @@
 	color: hsl(183, 100%, 15%);
 }
 
-/* .attribution{
-	position: absolute;
-	bottom: 0;
-	font-size: 20px;
-	transform: translate(-50%,-50%);
-} */

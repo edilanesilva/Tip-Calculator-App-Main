@@ -1,6 +1,8 @@
 @media screen and (min-width: 400px){    
+    
     .main {
         padding: 2em;
+        
     }
 
     .left-colum,.right-colum {
@@ -8,9 +10,6 @@
 	
     } 
 
-    .attribution{
-        display: none;
-    }
 }
 
  @media screen and (min-width: 722px){
@@ -20,17 +19,13 @@
             margin: 2em 0;
         } 
 
-        .attribution{
-            display: none;
-        }
+       
 
 }
  
 @media screen and (min-width: 1075px){
     
-    body{
-        height: 100vh;
-    }
+    
    
    .app {
         display: flex;
@@ -49,14 +44,7 @@
     }
      
 
-    .attribution{
-	    position: absolute;
-	    bottom: 0;
-	    font-size: 20px;
-	    transform: translate(-50%,-50%);
-         display: block; 
-        
-    } 
+    
 
 }
 
