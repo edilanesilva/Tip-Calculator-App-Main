@@ -37,10 +37,10 @@ Os usuários devem ser capazes de:
 
 ### Construído com
 
--   Semantic HTML5 markup
--   CSS custom properties
+-   HTML5 
+-   CSS 
 -   Flexbox
--   desktop-first workflow
+-   desktop - primeiro fluxo de trabalho
 -   [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - JS vanilla
 
 ### O que aprendi <br>
