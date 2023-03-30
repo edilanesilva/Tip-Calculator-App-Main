@@ -1,4 +1,4 @@
-# Aplicativo de calculadora de gorjetas
+# Aplicativo calculadora de gorjetas
 <h4 align="center"></h4>
 
 ## Table of contents
